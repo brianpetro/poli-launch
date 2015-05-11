@@ -17,8 +17,8 @@ meta title: "Campaign Software for Social Media - PoliLink by LinkPlug",
     creator: "@brianpetro_"
   } 
 %>
-<div class="row">
-  <div id="header" class="col-sm-12 text-center">
+<div id="header" class="row">
+  <div class="col-sm-12 text-center">
     <h1>
       Campaign Software for Social Media
     </h1>
@@ -46,8 +46,10 @@ meta title: "Campaign Software for Social Media - PoliLink by LinkPlug",
     <p class="lead">
       Our technology allows you to display your campaign slogan or advertisement before the articles or news you share on social media from around the web (CNN, Fox, Bloomberg).
     </p>
-    <ul class="list-group lead">
+    <p class="lead">
       Customized for your campaign goals
+    </p>
+    <ul class="list-group lead">
       <li class="list-group-item col-xs-6">
         Collect Emails
       </li>
@@ -61,9 +63,11 @@ meta title: "Campaign Software for Social Media - PoliLink by LinkPlug",
         Show Campaign Video
       </li>
     </ul>
-    <button class="btn btn-danger btn-lg">
-      Request a Demo
-    </button>
+    <p class="text-center">
+      <a class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
+        Request a Demo
+      </a>
+    </p>
   </div>
   <div class="col-sm-6">
     <%= image_tag "reagan-plug-demo.png", class: 'img-responsive', alt: 'Reagan NichePlug example.' %>
@@ -100,7 +104,7 @@ meta title: "Campaign Software for Social Media - PoliLink by LinkPlug",
     <h2>
       Get More Campaign Views
     </h2>
-    <button class="btn btn-danger btn-lg">
+    <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
       Request a Demo
     </button>
   </div>
@@ -126,13 +130,26 @@ meta title: "Campaign Software for Social Media - PoliLink by LinkPlug",
     </ul>
   </div>
 </div>
-
-<!-- parallax support -->
-<div id="section3-parallax" class="img-responsive">
-  <%= image_tag "girl-ipad.jpg", class: 'img-responsive' %>
+<div id="footer" class="row">
+  <div class="col-sm-12">
+  </div>
 </div>
-<script>
-  $(function() {
-    $('#section3-parallax').css('top', $('#section1').offset().top);
-  })
-</script>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Request a Demo</h4>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-info" role="alert" style="display: none">
+        </div>
+        <div class="alert alert-danger" role="alert" style="display: none">
+        </div>
+        <%= render 'invite_form' %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,6 +3,9 @@
   ul {
     white-space: nowrap;
   }
+  .btn {
+    margin-top: 10px;
+  }
 }
 #section2 {
   background-color: #e6e6e6;
@@ -11,8 +14,9 @@
   }
 }
 #section3 {
-  height: 320px;
-  background-color: transparent;
+  height: 420px;
+  background-image: url('/assets/girl-ipad.jpg');
+
   h2 {
     color: #e3e3e3;
     font-weight: 700;

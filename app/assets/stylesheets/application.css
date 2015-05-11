@@ -1,6 +1,8 @@
 /*
  *= require bootstrap/bootstrap-paper.min.css
  *= require font-awesome
- *= require home
+ *= require global
  *= require header
+ *= require sections
+ *= require team
  */

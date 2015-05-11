@@ -48,3 +48,6 @@ gem "font-awesome-rails"
 
 # Metamagic: SEO, Facebook, Twitter and custom meta tags
 gem 'metamagic'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'

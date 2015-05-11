@@ -1,17 +1,17 @@
 <%
-meta title: "Uber for Everything",
-  description: "Request an invite to start Ubering everything sooner! Built with love by Brian Petro.",
+meta title: "",
+  description: "",
   keywords: %w(Launch Uber Everything Template),
   og: {
-    title: "Attn Facebook: Uber for Everything",
-    description: "Request an invite via Facebook to start Ubering Everything!",
+    title: "",
+    description: "",
     type: "website",
     image: "",
     url: "http://#{ENV['PRODUCTION_DOMAIN']}"
   },
   twitter: {
-    title: "Uber Everything with a Tweet!",
-    description: "Request an invite via Twitter to start Ubering Everything!",
+    title: "",
+    description: "",
     card: "summary_large_image",
     site: "@brianpetro_",
     creator: "@brianpetro_"
@@ -20,54 +20,107 @@ meta title: "Uber for Everything",
 <div class="row">
   <div id="header" class="col-sm-12 text-center">
     <h1>
-      Our Startup: Uber for Everything
+      Campaign Software for Social Media
     </h1>
+    <p>
+      Share <em>any</em> article or news while simultaneously advertising for your campaign!
+    </p>
+    <ul class="list-unstyled list-inline">
+      <li>
+        <%= image_tag "icons/twitter.png" %>
+      </li>
+      <li>
+        <%= image_tag "icons/facebook.png" %>
+      </li>
+      <li>
+        <%= image_tag "icons/google-plus.png" %>
+      </li>
+      <li>
+        <%= image_tag "icons/youtube.png" %>
+      </li>
+    </ul>
+  </div>
+</div>
+<div id="section1" class="row">
+  <div class="col-sm-6">
+    <p>
+      Our technology allows you to display your campaign slogan or advertisement before the articles or news you share on social media from around the web (CNN, Fox, Bloomberg).
+      <br>
+      Customized for your campaign goals
+    </p>
+    <ul class="list-group">
+      <li class="list-group-item col-xs-6">
+        Collect Emails
+      </li>
+      <li class="list-group-item col-xs-6">
+        Get more Retweets
+      </li>
+      <li class="list-group-item col-xs-6">
+        Get Donations
+      </li>
+      <li class="list-group-item col-xs-6">
+        Show Campaign Video
+      </li>
+    </ul>
+    <button class="btn btn-danger btn-lg">
+      Request a Demo
+    </button>
+  </div>
+  <div class="col-sm-6">
+    <%= image_tag "reagan-plug-demo.png", class: 'img-responsive', alt: 'Reagan NichePlug example.' %>
+  </div>
+</div>
+<div id="section2" class="row">
+  <div class="col-sm-6">
+    <%= image_tag "hands-phone.png", class: 'img-responsive', alt: 'Picture og hands holding a cell phone.' %>
+  </div>
+  <div class="col-sm-6">
+    <p>
+      We use Link-based technology to display your campaign advertisement on social media.
+      <br>
+      This means that anytime someone on social media shares your link they will also be sharing the campaign advertisement.
+    </p>
+  </div>
+</div>
+<div id="team" class="row">
+  <div class="col-sm-6">
+    <p>
+      Forbes.com has been using similar software to drive millions of social media shares.
+      <br>
+      Now your campaign can get this software, customized for your campaign and with dedicated support.
+    </p>
+  </div>
+  <div class="col-sm-6">
+    <%= image_tag "brian-petro-edwin-espinosa-founders.png", class: 'img-responsive', alt: 'Brian Petro and Edwin Espinosa, the founders on LinkPlug and this political venture.' %>
+  </div>
+</div>
+<div id="section3" class="row">
+  <div class="col-sm-12 text-center">
     <h2>
-      Seriously, Everything! It's Coming Sooner Than You Think.
     </h2>
+    <button class="btn btn-danger btn-lg">
+      Request a Demo
+    </button>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-6 col-sm-offset-3">
-    <div class="jumbotron">
-      <h3>
-        Request an Invite
-      </h3>
-      <div class="alert alert-info" role="alert" style="display: none">
-      </div>
-      <div class="alert alert-danger" role="alert" style="display: none">
-      </div>
-      <%= render 'home/invite_form' %>
-      <%= render 'home/share_links' %>
-    </div>
-  </div>
-</div>
-<div id="support" class="row">
-  <div class="col-sm-offset-1 col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>
-        Lorem ipsum dolor sit amet, at mollis iracundia sea, eu diam inani dissentiunt nam. Eu delenit mandamus sit, vix esse dicta abhorreant ex, an atqui nullam vel.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>
-        Lorem ipsum dolor sit amet, at mollis iracundia sea, eu diam inani dissentiunt nam. Eu delenit mandamus sit, vix esse dicta abhorreant ex, an atqui nullam vel.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>
-        Lorem ipsum dolor sit amet, at mollis iracundia sea, eu diam inani dissentiunt nam. Eu delenit mandamus sit, vix esse dicta abhorreant ex, an atqui nullam vel.
-        </p>
-      </div>
-    </div>
+<div id="social-proof" class="row">
+  <div class="col-sm-12 text-center">
+    <p>
+      Share Anything
+    </p>
+    <ul class="list-unstyled list-inline">
+      <li>
+        <%= image_tag "icons/nyt.png" %>
+      </li>
+      <li>
+        <%= image_tag "icons/yahoo.png" %>
+      </li>
+      <li>
+        <%= image_tag "icons/reuters.png" %>
+      </li>
+      <li>
+        <%= image_tag "icons/cnn.png" %>
+      </li>
+    </ul>
   </div>
 </div>

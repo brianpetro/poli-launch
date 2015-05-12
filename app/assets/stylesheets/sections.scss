@@ -10,15 +10,15 @@
 #section2 {
   background-color: #e6e6e6;
   img {
-    margin: -15px -30px;
+    margin: -30px -30px;
   }
 }
 #section3 {
   padding: 50px 0;
-  height: 420px;
-  background-image: image-url('girl-ipad.jpg');
+  min-height: 240px;
 
   h2 {
+    margin: 10px 0;
     color: #e3e3e3;
     font-weight: 700;
   }

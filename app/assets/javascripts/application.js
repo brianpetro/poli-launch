@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery/jquery.cookie.js
+//= require jquery/parallax.min.js
 //= require jquery_ujs
 //= require bootstrap/bootstrap.min.js
 //= require home.js

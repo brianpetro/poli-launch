@@ -157,3 +157,10 @@ meta title: "Campaign Software for Social Media - PoliLink by LinkPlug",
     </div>
   </div>
 </div>
+<script>
+  $(function() {
+    // setup parallax
+    $('#header').parallax({imageSrc: <%= "'#{asset_url 'people-viewing-city.jpg'}'".html_safe %>});
+    $('#section3').parallax({imageSrc: <%= "'#{asset_url 'girl-ipad.jpg'}'".html_safe %>});
+  })
+</script>
